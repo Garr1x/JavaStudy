@@ -3,30 +3,77 @@ package GUI;
 import java.awt.*;
 import java.awt.event.*;
 
+class Person{
+    private String name;
+    private int age;
+    Person(String name,int age){
+        this.name = name;
+        this.age = age;
+    }
+    public String getName(){
+        return name;
+    }
+    public int getAge(){
+        return age;
+    }
+}
+
+class Teacher extends Person{
+    private String teachClass;
+    private double saraly;
+    Teacher(String name, int age,String teachClass,double saraly) {
+        super(name, age);
+        this.teachClass = teachClass;
+        this.saraly = saraly;
+    }
+    public String getTeachClass(){
+        return teachClass;
+    }
+    public double getSaraly(){
+        return saraly;
+    }
+}
+
+class Student extends Person{
+    private String major;
+    private int snum;
+    Student(String name, int age,String major,int snum) {
+        super(name, age);
+        this.major = major;
+        this.snum = snum;
+    }
+    public String getMajor(){
+        return major;
+    }
+    public int getSnum(){
+        return snum;
+    }
+}
+
 public class GuiTest extends Frame implements ActionListener {
     Frame f = new Frame("Test");                        //新建窗口
-    private Button ok = new Button("Enter");            //新建按钮
-    private Button bb = new Button("BB");               //新建按钮
-    private TextField tf = new TextField(30);       //新建文本框
+    private Button Stu = new Button("Student");            //新建按钮
+    private Button Tea = new Button("Teacher");               //新建按钮
+    private TextArea ta = new TextArea(5,5);       //新建文本框
     public void init(){
-        ok.addActionListener(this);                         //添加事件监控器
-        bb.addActionListener(this);
-        f.add(tf);                                              //窗口中添加
-        f.add(ok,BorderLayout.SOUTH);
-        f.add(bb,BorderLayout.NORTH);
+        Tea.addActionListener(this);                         //添加事件监控器
+        Stu.addActionListener(this);
+        f.add(ta);                                              //窗口中添加
+        f.add(Tea,BorderLayout.SOUTH);
+        f.add(Stu,BorderLayout.NORTH);
         f.pack();                                               //自动调整框架位置
         f.setVisible(true);
     }
     @Override
     public void actionPerformed(ActionEvent e){                 //重写actionPerformed方法
-        String name = e.getActionCommand();                     //获取按键名称
-        if(name.equals("Enter")){
-            System.out.println("User Clicked the OK Button");
-            tf.setText("Hello World");
+        String name = e.getActionCommand();
+        Student s = new Student("Zhong",20,"CS&T",111);
+        Teacher t = new Teacher("Liu",46,"Java",12120);//获取按键名称
+        if("Student".equals(name)){
+            ta.setText("Name:" + s.getName() + "\nAge:" + s.getAge() + "\nMajor:" + s.getMajor() + "\nStuNum:" + s.getSnum());
         }
-        else if(name.equals("BB")){
-            System.out.println("BB");
-            tf.setText("BB");
+        else if("Teacher".equals(name)){
+            ta.setText("Name:" + t.getName() + "\nAge:" + t.getAge() + "\nTeachClass:" + t.getTeachClass() + "\nSaraly:" + t.getSaraly());
         }
     }
     public static void main(String[] args){
