@@ -74,7 +74,7 @@ public class GuiTest extends Frame implements ActionListener {
         //添加事件监控器
         Tea.addActionListener(this);
         Stu.addActionListener(this);
-        /*
+        /*未完成
         m1.addActionListener(this);
         m11.addActionListener(this);
         m12.addActionListener(this);
