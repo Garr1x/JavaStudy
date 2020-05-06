@@ -12,7 +12,7 @@ public class IOStreamTest extends JFrame implements ActionListener{
     JButton read = new JButton("Read File");
     JButton write = new JButton("Write File");
     //新建单行文本框
-    JTextField FileName = new JTextField(20);
+    JTextField FileName = new JTextField(50);
     //新建标签
     JLabel prompt = new JLabel("Enter Flie Name:",JLabel.RIGHT);
     //新建面板
@@ -23,11 +23,12 @@ public class IOStreamTest extends JFrame implements ActionListener{
         read.addActionListener(this);
         write.addActionListener(this);
         //面板加载组件
+        //add组件的顺序会影响位置
         commands.setLayout(new GridLayout(2,2,1,1));
         commands.add(prompt);
         commands.add(FileName);
-        commands.add(read);
         commands.add(write);
+        commands.add(read);
         //初始化容器
         this.getContentPane().setLayout(new BorderLayout());
         this.getContentPane().add("North",commands);
