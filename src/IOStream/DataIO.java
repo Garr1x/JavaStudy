@@ -44,6 +44,7 @@ public class DataIO extends JFrame implements ActionListener {
             try (DataInputStream in = new DataInputStream(new FileInputStream(fileName))) {
                 //向多行文本框中打印信息
                 content.setText("Name\tAge\tSalary\n");
+                //读取文件中数据
                 while (true) {
                     String name = in.readUTF();
                     int age = in.readInt();
