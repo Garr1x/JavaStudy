@@ -48,6 +48,7 @@ public class IOStreamTest extends JFrame implements ActionListener{
     private void readTextFile(JTextArea content,String fileName){
         try{
             BufferedReader inStream = new BufferedReader(new FileReader((fileName)));
+            //¶ÁÊý¾Ý
             String line = inStream.readLine();
             while(line != null){
                 content.append(line + "\n");
