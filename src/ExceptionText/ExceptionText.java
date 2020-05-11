@@ -14,7 +14,6 @@ class IllegalArgumentException extends Exception{
 
 /**
  * @author Garr1x
- * WDNMD
  */
 public class ExceptionText {
     public static void main(String[] args) {
