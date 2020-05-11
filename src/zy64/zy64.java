@@ -37,6 +37,9 @@ class MyRectangle implements Area{
     }
 }
 
+/**
+ * @author Garr1X_Bo
+ */
 public class zy64 {
     public static void main(String[] args){
         MyCircle c = new MyCircle(3);
