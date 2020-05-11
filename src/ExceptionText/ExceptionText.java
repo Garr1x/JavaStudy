@@ -13,7 +13,7 @@ class IllegalArgumentException extends Exception{
 }
 
 /**
- * @author Administrator
+ * @author Garr1x
  * WDNMD
  */
 public class ExceptionText {
