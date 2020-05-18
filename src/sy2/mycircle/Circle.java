@@ -9,8 +9,8 @@ public class Circle {
     private double radius;
     private double centerX;
     private double centerY;
-    private double area;
-    private double perimeter;
+    //private double area;
+    //private double perimeter;
 
     public double getRadius() {
         return radius;
@@ -19,7 +19,7 @@ public class Circle {
     public void setRadius(double radius) {
         this.radius = radius;
     }
-
+/*
     public double getArea() {
         return area;
     }
@@ -27,6 +27,8 @@ public class Circle {
     public double getPerimeter() {
         return perimeter;
     }
+
+ */
 
     public double getCenterX() {
         return centerX;
@@ -43,12 +45,21 @@ public class Circle {
     public void setCenterY(double centerY) {
         this.centerY = centerY;
     }
-
+/*
     public void calculatePerimeter(){
         perimeter = 2*radius*PI;
     }
 
     public void calculateArea(){
         area = radius*radius*PI;
+    }
+}
+ */
+    public double Perimeter(){
+        return 2*radius*PI;
+    }
+
+    public double area(){
+        return radius*radius*PI;
     }
 }

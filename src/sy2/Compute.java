@@ -35,10 +35,11 @@ public class Compute {
             if(c.getH()<=0 || c.getRadius()<=0) {
                 throw new IllegalAccessException();
             }
-            c.calculateArea();
-            c.calculatePerimeter();
+            //c.calculateArea();
+            //c.calculatePerimeter();
             System.out.println("该圆柱体的中心坐标位置为(" + c.getCenterX() + "," + c.getCenterY() + "," + c.getRadius() + "),高度为" + c.getH());
-            System.out.println("表面积为" + c.area() +"，体积为" + c.volume() + "底面积为" + c.getArea());
+            //System.out.println("表面积为" + c.area() +"，体积为" + c.volume() + "底面积为" + c.getArea());
+            System.out.println("表面积为" + c.area() +"，体积为" + c.volume() + "底面积为" + c.getRadius()*c.getRadius()*Math.PI);
         } catch (NumberFormatException e) {
             System.out.println("请输入Double类型的数据!!");
         } catch (ArrayIndexOutOfBoundsException e) {
