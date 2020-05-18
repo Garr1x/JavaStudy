@@ -5,7 +5,7 @@ import sy2.myclinder.Cylinder;
 import java.util.Scanner;
 
 /**
- * @author Administrator
+ * @author Garr1X_Bo
  */
 public class Compute {
     public static void main(String[] args) {

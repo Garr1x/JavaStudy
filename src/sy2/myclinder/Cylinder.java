@@ -3,7 +3,7 @@ package sy2.myclinder;
 import sy2.mycircle.Circle;
 
 /**
- * @author Administrator
+ * @author Garr1X_Bo
  */
 public class Cylinder extends Circle {
     private double h;

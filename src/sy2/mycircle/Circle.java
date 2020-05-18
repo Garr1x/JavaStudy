@@ -3,7 +3,7 @@ package sy2.mycircle;
 import static java.lang.Math.PI;
 
 /**
- * @author Administrator
+ * @author Garr1X_Bo
  */
 public class Circle {
     private double radius;
