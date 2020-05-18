@@ -13,12 +13,11 @@ public class Cylinder extends Circle {
         this.h = h;
     }
 
-    @Override
     public double area(){
-        return perimeter()*h;
+        return getPerimeter()*h;
     }
 
     public double volume(){
-        return super.area()*h;
+        return getArea()*h;
     }
 }
