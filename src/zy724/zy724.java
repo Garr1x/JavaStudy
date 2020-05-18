@@ -8,7 +8,7 @@ public class zy724 {
         String line = sc.nextLine();
         parseLineToIntArr(line);
     }
-    public static void parseLineToIntArr(String line) throws ArrayIndexOutOfBoundsException{
+    public static void parseLineToIntArr(String line){
         String[] strArr = line.split(" ");
         try{
             int[] intArr = new int[strArr.length];
