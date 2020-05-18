@@ -1,7 +1,6 @@
 package zy724;
 
 import java.util.Scanner;
-//
 /**
  * @author Administrator
  */
