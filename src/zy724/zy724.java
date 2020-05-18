@@ -2,6 +2,9 @@ package zy724;
 
 import java.util.Scanner;
 
+/**
+ * @author Administrator
+ */
 public class zy724 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
