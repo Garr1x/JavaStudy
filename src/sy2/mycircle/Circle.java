@@ -2,6 +2,9 @@ package sy2.mycircle;
 
 import static java.lang.Math.PI;
 
+/**
+ * @author Administrator
+ */
 public class Circle {
     private double radius;
     private double centerX;

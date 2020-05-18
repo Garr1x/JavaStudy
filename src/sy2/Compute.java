@@ -4,26 +4,35 @@ import sy2.myclinder.Cylinder;
 
 import java.util.Scanner;
 
+/**
+ * @author Administrator
+ */
 public class Compute {
     public static void main(String[] args) {
         Cylinder c = new Cylinder();
         System.out.println("请输入半径，圆心位置X，Y以及高度:");
         Scanner sc = new Scanner(System.in);
+        //读取一行内的输入
         String line = sc.nextLine();
+        //以空格为界分割所输入的字符
         String[] strArr = line.split(" ");
         try {
+            //将字符转换为double类型存进数组中
             double[] doubleArr = new double[strArr.length];
             for (int i = 0; i < 4; i++) {
                 doubleArr[i] = Double.parseDouble(strArr[i]);
             }
+            //当输入数据不等于4个时 抛出异常
             if (strArr.length != 4) {
                 throw new ArrayIndexOutOfBoundsException();
             }
+            //给数据赋值
             c.setRadius(doubleArr[0]);
             c.setCenterX(doubleArr[0]);
             c.setCenterY(doubleArr[1]);
             c.setH(doubleArr[3]);
-            if(c.getH()<0 || c.getRadius()<0) {
+            //当高度h或半径radius小于或等于零时抛出异常
+            if(c.getH()<=0 || c.getRadius()<=0) {
                 throw new IllegalAccessException();
             }
             c.calculateArea();
