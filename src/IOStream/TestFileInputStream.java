@@ -18,7 +18,7 @@ public class TestFileInputStream {
                 num++;
             }
             in.close();
-            System.out.println("\nRead " + num + " Bytes.");
+            System.out.println("\nRead " + num + " Bytes.\n");
         }catch (FileNotFoundException e){
             System.out.println("Can Not Find The File!!!");
             System.exit(-1);

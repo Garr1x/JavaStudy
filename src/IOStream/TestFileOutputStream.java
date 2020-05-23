@@ -5,6 +5,9 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+/**
+ * @author Garr1X_Bo
+ */
 public class TestFileOutputStream {
     public static void main(String[] args){
         int b;
