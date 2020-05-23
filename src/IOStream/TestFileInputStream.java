@@ -7,6 +7,7 @@ import java.io.IOException;
 /**
  * @author Garr1X_Bo
  */
+
 public class TestFileInputStream {
     public static void main(String[] args){
         int b;
