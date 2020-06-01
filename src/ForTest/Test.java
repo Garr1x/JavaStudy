@@ -1,5 +1,10 @@
 package ForTest;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
 interface A{
 
     double fun(double x,double y);
@@ -8,7 +13,8 @@ interface A{
 
 class B implements A{
 
-    public double fun(double x,double y){
+    @Override
+    public double fun(double x, double y){
 
         return x*y;
 
@@ -22,9 +28,9 @@ class B implements A{
 
 }
 
-public class Test{
+public class Test {
 
-    public static void main(String args[]){
+    /*public static void main(String args[]){
 
         A a=new B();
 
@@ -34,6 +40,20 @@ public class Test{
 
         System.out.println(b.add(3,5));
 
-    }
+        int t=1000;
 
+        System.out.println(t+1000);
+
+    }*/
+    public static void main(String args[]) throws IOException {
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("请输入一个字符串：");
+
+        String s = br.readLine();
+
+        System.out.println("输入的字符串是：" + s);
+
+    }
 }
