@@ -35,6 +35,7 @@ public class IOStreamTest extends JFrame implements ActionListener{
         this.getContentPane().add(new JScrollPane(content));
         this.getContentPane().add("Center",content);
     }
+
     private void writeTextFile(JTextArea content,String fileName){
         try{
             FileWriter outStream = new FileWriter(fileName);
@@ -45,6 +46,7 @@ public class IOStreamTest extends JFrame implements ActionListener{
             e.printStackTrace();
         }
     }
+
     private void readTextFile(JTextArea content,String fileName){
         try{
             BufferedReader inStream = new BufferedReader(new FileReader((fileName)));
@@ -63,6 +65,7 @@ public class IOStreamTest extends JFrame implements ActionListener{
             e.printStackTrace();
         }
     }
+
     @Override
     public void actionPerformed(ActionEvent evt){
         String fileName = FileName.getText();
@@ -74,6 +77,7 @@ public class IOStreamTest extends JFrame implements ActionListener{
             writeTextFile(content,fileName);
         }
     }
+
     public static void main(String[] args){
         IOStreamTest t1 = new IOStreamTest();
         t1.setSize(800,600);

@@ -57,3 +57,21 @@ public class Test {
 
     }
 }
+
+/*
+class T1 {
+    private String privateName;
+    public String publicName;
+    protected String protectedName;
+    String defaultName;
+}
+
+class T2 extends T1{
+    public void test(){
+        System.out.println(publicName);
+        System.out.println(protectedName);
+        System.out.println(defaultName);
+        System.out.println(privateName);
+    }
+}
+*/
