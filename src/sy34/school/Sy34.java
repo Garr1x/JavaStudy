@@ -42,11 +42,13 @@ public class Sy34 extends JFrame implements ActionListener {
             //关闭主菜单可见性
             s.f.setVisible(false);
             Student stu = new Student();
+            stu.showInformation();
         }
         else{
             //关闭主菜单可见性
             s.f.setVisible(false);
             Teacher tea = new Teacher();
+            tea.showInformation();
         }
     }
 
